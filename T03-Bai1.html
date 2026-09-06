@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuan03 Bai1</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container {
+        width: 1000px;
+        height: auto;
+        margin: 20px auto;
+        background: linear-gradient(to bottom, #92d8f3, #73c5e8, #1e8ee4);
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+        flex: 1;
+        border-bottom: 5px dotted white;
+        margin-left: 6px;
+
+
+    }
+
+    .header a {
+        float: left;
+        color: white;
+        padding-right: 30px;
+        font-size: 22px;
+        margin-top: 18px;
+        margin-left: 18px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+
+    .header h2 {
+        color: aliceblue;
+        
+        font-weight: bold;
+        text-align: right;
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 12px;
+        text-shadow:
+        0 0 2px rgb(0, 0, 0),
+        0 0 4px blue,
+        0 0 8px blue,
+        0 0 12px blue;
+    }
+
+
+
+    .content {
+        clear: both;
+        width: 100%;
+        height: auto;
+        flex: 14;
+        display: flex;
+        margin-bottom: 60px;
+        margin-top: 35px;
+        
+
+    }
+
+    .footer {
+        clear: both;
+        width: 100%;
+        height: auto;
+        flex: 2;
+        border-top: 5px dotted white;
+        margin-left: 6px;
+
+    }
+    
+    .content1{
+        flex: 1;
+        height: auto;
+        margin-left: 5px;
+        
+        
+    }
+
+    .tuade{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .noidung{
+        
+        color: white;
+        padding-right: 5px;
+        text-align: justify;
+    }
+    .formdien{
+        color: white;
+        margin-left: 50px;
+        margin-right: 3%;
+        
+    }
+    select{
+        border: 2px solid blue; 
+        border-radius: 5px;
+
+    }
+    input[type="text"] {
+        border: 2px solid blue;
+        border-radius: 5px;
+    }
+    textarea{
+        border: 2px solid blue;
+        border-radius: 5px;
+        
+    }
+    input[type="submit"]{
+        border: 2px dotted blue;
+        border-radius: 5px;
+
+    }
+    input[type="reset"]{
+        border: 2px dotted blue;
+        border-radius: 5px;
+
+    }
+    .nut{
+        padding-left: 180px;
+    }
+    
+
+    .content2{
+        flex: 1;
+        height: auto;
+        
+
+        
+    }
+    .content2 img{
+        width: 450px;
+        padding-left: 40px;
+        margin-bottom: 15px;
+    }
+    .ghichu{
+        padding-left: 70px;
+        
+    }
+    .ghichu p{
+        color: rgb(7, 7, 194);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+
+    .footer p{
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#Home">Home </a>
+            <a href="#Products">Products</a>
+            <a href="#Services">Services</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+            <h2>Sky World</h2>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <div class="tuade">
+                    <p>Registration Information</p>
+                </div>
+                <div class="noidung">
+                    <p>Start your travel planning right now with our on-line tour registration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect tour package custom built for your group's needs.</p>
+                </div>
+                <div class="formdien">
+                    <table>
+                        <tr>
+                            <td>Title</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">Mr</option>
+                                    <option value="">Mrs</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Full Name*</td>
+                            <td>
+                                <input type="text" name="txtFullName" placeholder="First Name" style="width: 250px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mailing Address</td>
+                            <td>
+                                <input type="text" name="txtMA" placeholder="Mailing Address" style="width: 250px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>
+                                <input type="text" name="txtCity" placeholder="City" style="width: 250px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>
+                                <input type="text" name="txtCountry" placeholder="Country" style="width: 250px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">Specific questions or requests about your tour</td>
+                            <td>
+                                <textarea name="comments" rows="5" placeholder="Specific questions or requests about your tour" style="width: 250px;"></textarea>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <div class="nut">
+                             <input type="submit" value="submit" />
+                            <input type="reset" value="reset" />
+                        </div>
+                    </div>
+            </div>
+            <div class="content2">
+                <img src="../Tuan03/img/Bai1/sky.png" alt="sky">
+                <div class="ghichu">
+                    <p style="font-size: 30px; text-shadow: 1px 2px 3px blue; " >You've arrived.</p>
+                    <p style="padding-left: 15px;">Journeys as great as the destinations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p><strong>&copy;2016 Sky World Tours. All rights reserved.</strong><br>Contact information: <strong><i>Student Name</i></strong> | <strong><i>StudentID</i></strong> | Testing Date <strong><i> 16 Sept 2016</i></strong> </p>
+            
+        </div>
+    </div>
+</body>
+
+</html>

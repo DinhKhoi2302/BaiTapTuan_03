@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuan03 Bai2</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container {
+        width: 1000px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 2px auto;
+
+        border: 2px solid black;
+
+
+    }
+
+    .header {
+        flex: 3;
+        background-color: #294E79;
+        display: flex;
+    }
+
+    .headertrai {
+        padding: 5px 5px;
+        flex: 8;
+    }
+
+    .headertrai img {
+        width: 70px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+
+    }
+
+    .headertrai h1 {
+        color: white;
+        margin-top: 20px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 37px;
+        padding-left: 86px;
+
+    }
+
+    .headertrai p {
+        color: white;
+        margin-top: 3px;
+        font-size: 19px;
+    }
+
+    .headerphai {
+        clear: both;
+        flex: 12;
+        background-color: #294E79;
+    }
+
+    .headerphai input[type="text"] {
+        margin-left: 335px;
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 200px;
+        background-color: #172e49;
+        border: none;
+        height: 25px;
+        padding-left: 6px;
+        color: white;
+
+
+
+    }
+
+    .headerphai input[type="text"]::placeholder {
+        color: white;
+    }
+
+    button {
+        background-color: #172e49;
+        color: white;
+        border: none;
+        padding: 5px;
+    }
+
+    .danhmuc {
+        margin-top: 54px;
+    }
+
+    .danhmuc a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(4, 97, 184);
+        padding: 16px;
+        margin-right: 9px;
+        margin-left: 3px;
+
+
+    }
+
+
+    .content {
+        flex: 16;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        margin-bottom: 60px;
+        
+
+    }
+
+    .noidungtrai {
+        flex: 7;
+        padding-left: 10px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tuade {
+        flex: 1;
+        margin-bottom: 16px;
+    }
+
+    .tuade p {
+        font-size: 20px;
+        padding-top: 32px;
+        padding-left: 10px;
+        color: gray;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .noidungchinh {
+        flex: 8;
+        display: flex;
+        border-top: 1px dashed;
+    }
+
+    .phan1 {
+        flex: 6;
+        background-color: white;
+        padding-top: 16px;
+        padding-right: 20px;
+
+    }
+
+    .phan1 p {
+        color: rgb(248, 0, 41);
+        text-shadow: 2px 4px 6px green;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-size: 16px;
+        
+        padding-right: 20px;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .phan1 table {
+        font-size: 13px;
+        font-family: Georgia, "Times New Roman", serif;
+        
+    }
+    td {
+    padding-right: 10px;
+    }
+
+    .phan1 table input[type="text"] {
+        width: 175px;
+        height: 25px;
+        margin-bottom: 18px;
+        background-color: rgba(233, 233, 233, 0.616);
+        border: none;
+        border: 1px solid gray;
+
+    }
+
+    textarea {
+        width: 362px;
+        height: 80px;
+        margin-bottom: 10px;
+        background-color: rgba(233, 233, 233, 0.616);
+        border: 1px solid gray;
+    }
+
+    
+    .nut input[type="submit"] {
+        width: 70px;
+        height: 30px;
+        margin-right: 12px;
+        background-color: white;
+        border: none;
+        border: 1px solid gray;
+    }
+
+    .nut input[type="reset"] {
+        width: 50px;
+        height: 30px;
+        margin-right: 12px;
+        background-color: white;
+        border: none;
+        border: 1px solid gray;
+    }
+
+    .phan2 {
+        flex: 4;
+
+    }
+
+    .muc2 {
+        padding-left: 20px;
+        color: gray;
+       
+    }
+
+    .muc2 p {
+        font-size: 21px;
+        font-family: Georgia, "Times New Roman", serif;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .thongtin2 {
+        background-color: white;
+        border-top: 1px dashed gray;
+        margin: 0px 20px;
+        
+        
+    }
+    .thongtin2 p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-top: 16px;
+        color: gray;
+    }
+    .p1 {
+        margin-bottom: 36px;
+    }
+    .p2 {
+        margin-bottom: 20px;
+    }
+    .thanhbenphai {
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+        margin-right: 10px;
+
+    }
+    .oxam{
+        background-color: rgba(235, 232, 232, 0.39);
+        margin-top: 50px;
+        padding: 12px 25px;
+    }
+    .mucphai{
+        font-size: 24px;
+        font-family: Georgia, "Times New Roman", serif;
+        margin-bottom: 15px;
+        color: gray;
+    }
+    .thongtinphai{
+        border-top: 1px dashed gray;
+    }
+    .hinhhoa{
+        margin-top: 25px;
+        border: 1px solid gray;
+        background-color: white;
+        margin-bottom: 18px;
+    }
+    .hinhhoa img{
+        padding: 4px;
+        width: 100%;
+        display: block;
+    }
+
+    .thongtinphai p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.4;
+    }
+    .Readmore{
+        margin-left: 138px;
+        margin-top: 10px;
+
+    }
+    .Readmore a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #053e80;
+    }
+    .footer {
+        flex: 1;
+        background-color: rgb(4, 4, 100);
+        border-bottom: 2px solid rgb(94, 71, 58);
+    }
+    .footer p{
+        color: white;
+        padding:12px;
+    }
+    .cuoi{
+        margin-bottom: 2px;
+        margin-left: 265px;
+        margin-right: 265px;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headertrai">
+                <img src="../Tuan03/img/Bai2/flower.png" alt="">
+                <h1>FlowerBox 360</h1>
+                <p>...to get your daily close of luxury roses!</p>
+
+            </div>
+            <div class="headerphai">
+                <input type="text" name="txtSearch" placeholder="Search the site...">
+                <button>GO</button>
+                <div class="danhmuc">
+                    <a href="#Home">Home</a>
+                    <a href="#Promotion">Promotion</a>
+                    <a href="#Gift Baskets">Gift Baskets</a>
+                    <a href="#Flowers Services">Flowers Services</a>
+                    <a href="#About">About</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+            <div class="noidungtrai">
+
+                <div class="tuade">
+                    <p>Why Not Contact Us Today!</p>
+                </div>
+                <div class="noidungchinh">
+                    <div class="phan1">
+                        <p>For FlowerBox 360 shopers, that means not only can you send your friends and loves ones the
+                            highest
+                            quality flowers found on online, but that you can do so at a great value.</p>
+                        <table>
+                            <tr>
+                                <td>Name:</td>
+                                <td>Email:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="txtName"></td>
+                                <td><input type="text" name="txtEmail"></td>
+                            </tr>
+                            <tr>
+                                <td>Telephone:</td>
+                                <td>Subject:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="txtTelephone"></td>
+                                <td><input type="text" name="txtSubject"></td>
+                            </tr>
+                            <tr>
+                                <td>Message:</td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea name="txtMessage" id=""></textarea></td>
+                            </tr>
+                        </table>
+                        <div class="nut">
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Reset" />
+                        </div>
+
+                    </div>
+                    <div class="phan2">
+                        <div class="muc2">
+                            <p>FlowerBox 360 Info!</p>
+                        </div>
+                        <div class="thongtin2">
+                            <p class="p1">
+                                Openationg Hours: <br>
+                                Monday-Friday:9:000am-5:00pm
+                                Saturday:9:00am-1.00pm.
+                                Sunday:CLosed (No Deliveries)
+                                ORDER ONLINE 24/7
+                            </p>
+                            <p class="p2">
+                                Software Engineering Dept.
+                                Information Technology Faculty <br>
+                                First Floor, H Building
+                            </p>
+                            <p >
+                                12 Nguyen Van Bao 5t, Ward 4,
+                                Go Vap District, <br> Ho Chi Minh City <br>
+                                Tel: 0283.8940 390 <br>
+                                Fax: 0283.9940 954
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thanhbenphai">
+                <div class="oxam">
+                    <div class="mucphai">
+                        <p>Discounts & Specials</p>
+                    </div>
+                    <div class="thongtinphai">
+                        <div class="hinhhoa">
+                            <img src="../Tuan03/img/Bai2/rose.png" alt="" >
+                        </div>
+                        <p>FlowerBox 360 offers many great discounts throught the year,
+                            from coupons and coupon codes, to promo codes and other savings. We also offer military
+                            flower
+                            discounts to our wonderfull troppps!
+                        <div class="Readmore">
+                            <a href="#ReadMore">Read More >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2017 - All Rights Reserved - <span style="color: #aab6c5;">Software Engineering Department - Industrial University of Ho
+                Chi Minh City</span></p>
+        </div>
+    </div>
+    <div class="cuoi"></div>
+</body>
+
+</html>

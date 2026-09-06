@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24698041" content="TruongDinhPhuc">
+    <title>Case 03</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            width: 800px;
+            height: auto;
+            margin: 12px auto;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header1 {
+            flex: 2.5;
+            background-color: #ad4c15;
+            padding: 10px 20px;
+        }
+
+        .menu {
+            flex: 1;
+            /*background-color: tomato;*/
+            padding: 5px 0;
+        }
+
+        .banner {
+            /*flex: 4.5;*/
+            /*background-color: brown;*/
+            background-image: url(../Tuan03/img/Bai3/banner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 120px;
+        }
+
+        .content{
+            flex: 15;
+            /*background-color: cadetblue;*/
+            display: flex;
+        }
+
+        .footer {
+            flex: 2;
+            /*background-color: cornflowerblue; */
+            background-image: url(../Tuan03/img/Bai3/footer.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            padding-top: 15px;
+            padding-bottom: 12px;
+        }
+
+        .header1 h1 {
+            color: #4a6316;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 3px #f7b05b, 
+                        -1px -5px 2px #fff;
+            font-family: "Times New Roman", Georgia, serif;
+            /*margin-left: 20px;*/
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            
+            margin-left: 30px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #943d0c;
+            display: block;
+            padding: 5px 5px;
+        }
+
+        .content .trai{
+            flex: 7;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content .trai .tieu-de {
+            flex: 1;
+        }
+
+        .content .trai .tieu-de h2{
+            margin-left: 12px;
+            color: #a78435;
+        }
+
+        .content .trai .nd-duoi{
+            flex: 9;
+            padding: 20px 55px;
+
+
+        }
+
+        .content .trai .nd-duoi p{
+            text-align: justify;
+            margin-bottom: 40px;
+            color: #a78435;
+            font-weight: bold;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            font-size: 14px;
+            word-spacing: 2px;
+            
+        }
+
+        .content .trai .nd-duoi input{
+            width: 95%;
+            height: 30px;
+            border: none;
+            border-bottom: 2px solid grey;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        .content .trai .nd-duoi button{
+            color: white;
+            padding: 5px 12px;
+            background-color: #7e8100;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .content .phai{
+            flex: 3;
+            border-left: 1px solid rgb(171, 170, 170);
+            padding: 25px 18px;
+
+        }
+
+        .content .phai .link {
+            background-color: #faebd8;
+            border-radius: 15px 15px 0px 0px;
+
+        }
+
+        .content .phai .link h3{
+            color: #674437;
+            margin-left: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 3px;
+        }
+
+        .content .phai .link ul {
+            list-style-type: square;
+            padding-left: 60px;
+            margin-top: 20px;
+            
+        }
+
+       
+        .content .phai .link ul li a {
+            text-decoration: none;
+            color: #674437;
+            display: block;
+            padding: 3px 8px;
+            font-size: 13px;
+            
+        }
+
+        .content .phai .nd2 {
+            margin: 15px 8px 0px 18px;
+        }
+
+        .content .phai .nd2 h3{
+            margin-left: 5px;
+            color: #633e12;
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+        }
+
+        .content .phai .nd2 .hinh-cuoi {
+            float: left;
+            width: 80px;
+            height: auto;
+            margin-right: 12px;
+            border: 1px solid grey;
+            padding: 8px;
+        }
+
+        .content .phai .nd2 .hinh-cuoi img {
+            width: 100%;
+
+            display: block;
+        }
+
+        .content .phai .nd2 p {
+            text-align: justify;
+            margin-right: 12px;
+        }
+
+        .footer p {
+            text-align: center;
+        }
+
+        .menu ul li:hover{
+            background-color: #943d0c;
+            border-radius: 3px;
+        }
+
+        .menu ul li a:hover{
+            color: white;
+        }
+
+        .content .phai .link ul li:hover {
+            background-color: #674437;
+        }
+
+        .content .phai .link ul li a:hover{
+            color: #faebd8;
+        }
+
+        .content .trai .nd-duoi button:active{
+            background-color: #4f5000;
+            color: rgb(220, 219, 219);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header1">
+            <h1>AUTUMN TRAVEL COMPANY</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li style="margin-left: 20px;"><a href="./Case03.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Order">Order</a></li>
+            </ul>
+        </div>
+        <div class="banner"></div>
+        <div class="content">
+            <div class="trai">
+                <div class="tieu-de"><h2>Sign up for membership benefits</h2></div>
+                <div class="nd-duoi">
+                    <p>Our philosophical values are transparency, respect, formality and responsibility. 
+                    Our stimulus is your enthusiasm. Our motto is your satisfaction.</p>
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Password">
+                    <input type="text" placeholder="Retype password">
+                    <button>SIGN ME UP</button>
+                </div>
+            </div>
+            <div class="phai">
+                <div class="link">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="">Make your Own Tour</a></li>
+                        <li><a href="">Maldives Tours</a></li>
+                        <li><a href="">Nature & Adventure</a></li>
+                        <li><a href="">Readymade Tours</a></li>
+                        <li><a href="">Europe Tours</a></li>
+                        <li><a href="">Rusia Tours</a></li>
+                    </ul>
+                </div>
+                <div class="nd2">
+                    <h3>More info</h3>
+                    <div class="hinh-cuoi"><img src="../Tuan03/img/Bai3/leaf.png" alt=""></div>
+                    <p>Our purpose is the client who gives to us the opportunites to serve and to make known the reality arround the world</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2017 Software Engineering Department | Test Date: 16 Sept 2017</p>
+        </div>
+    </div>
+</body>
+</html>
